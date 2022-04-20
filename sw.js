@@ -2,8 +2,8 @@ var cacheName = 'ytbn-graphing-software-pwa';
 var filesToCache = [
     './',
     './index.html',
-    './ytbn_graphing_software.js',
-    './ytbn_graphing_software_bg.wasm',
+    './ytbn_64ac1ace0a0c257b03c422cec6267cb7.js',
+    './ytbn_64ac1ace0a0c257b03c422cec6267cb7.wasm',
 ];
 
 /* Start the service worker and cache all of the app's content */
