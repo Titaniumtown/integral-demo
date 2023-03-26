@@ -1,1 +1,26 @@
-var cacheName="ytbn-graphing-software-pwa",filesToCache=["./","./index.html","./c116f563df89e8491e06734cf1f88d3a.js","./c116f563df89e8491e06734cf1f88d3a.wasm","./logo.svg"];self.addEventListener("install",(function(e){e.waitUntil(caches.open(cacheName).then((function(e){return e.addAll(filesToCache)})))})),self.addEventListener("fetch",(function(e){e.respondWith(caches.match(e.request).then((function(t){return t||fetch(e.request)})))}));
+var cacheName = 'ytbn-graphing-software-pwa';
+var filesToCache = [
+    './',
+    './index.html',
+    './18ab6d3d4aa15d80ce9b1ca75f33f422.js',
+    './18ab6d3d4aa15d80ce9b1ca75f33f422.wasm',
+    "./logo.svg"
+];
+
+/* Start the service worker and cache all of the app's content */
+self.addEventListener('install', function (e) {
+    e.waitUntil(
+        caches.open(cacheName).then(function (cache) {
+            return cache.addAll(filesToCache);
+        })
+    );
+});
+
+/* Serve cached content when offline */
+self.addEventListener('fetch', function (e) {
+    e.respondWith(
+        caches.match(e.request).then(function (response) {
+            return response || fetch(e.request);
+        })
+    );
+});
