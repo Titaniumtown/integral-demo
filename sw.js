@@ -2,8 +2,8 @@ var cacheName = 'ytbn-graphing-software-pwa';
 var filesToCache = [
     './',
     './index.html',
-    './1729623f15a4dd46fa45becd6e565012.js',
-    './1729623f15a4dd46fa45becd6e565012.wasm',
+    './292e9d52600901aaa58026d9490d2bb7.js',
+    './292e9d52600901aaa58026d9490d2bb7.wasm',
     "./logo.svg"
 ];
 
